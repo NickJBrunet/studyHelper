@@ -48,7 +48,7 @@ function stopBrainDamage()
     brainDamage = false
 }
 
-function startBrainDamage(damage=1000)
+function startBrainDamage(damage=100)
 {
     let iterationTime = brainHealth/(damage/100)
     let iterationCount = 10

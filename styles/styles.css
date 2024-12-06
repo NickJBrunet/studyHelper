@@ -4,6 +4,14 @@ html
     background-color: black;
 }
 
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
 h1
 {
     font-family: 'Courier New', Courier, monospace;
@@ -39,14 +47,9 @@ h2
 
 
 
-
-
-.interval-container
+#main-container
 {
-    display: flex;
-    /* align-items: center; */
-    border: 1px solid white;
-    /* width: 100%; */
+    width: 100%;
 }
 
 #left-container
@@ -67,11 +70,12 @@ h2
 
 #level-container
 {
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 100%;
+    width: 90%;
     height: 100px;
 }
 
@@ -87,17 +91,15 @@ h2
 #level-area
 {
     display: flex;
-    justify-content: center;
     align-items: center;
 
     column-gap: 20px;
+    padding: 0px 20px;
 
-    border: 2px solid lightgray;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(24, 24, 24);
 
-    color: black;
-    width: 15%;
+    color: rgb(245, 184, 209);
     height: 60%;
 }
 
@@ -133,6 +135,26 @@ h2
 
 
 
+
+#damage,#xpPer,#brainHealth
+{
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#damage
+{
+    color: rgb(240, 132, 132);
+}
+#xpPer
+{
+    color: rgb(204, 248, 204);
+}
+#brainHealth
+{
+    color: rgb(223, 222, 160);
+}
 
 
 
