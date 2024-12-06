@@ -43,12 +43,12 @@ function getBrainXpMax()
     return brainLevel * 100
 }
 
-function stopBrainDamage(intervalContainer)
+function stopBrainDamage()
 {
     brainDamage = false
 }
 
-function startBrainDamage(intervalContainer, damage=1000)
+function startBrainDamage(damage=1000)
 {
     let iterationTime = brainHealth/(damage/100)
     let iterationCount = 10
@@ -72,11 +72,11 @@ function startBrainDamage(intervalContainer, damage=1000)
         brainHealthElement.innerHTML = Math.round(100 - percentage) + "/" + "100"
         brainLevelElement.innerHTML = brainLevel
 
-        setPercent(intervalContainer, 100 - percentage)
+        setPercent(brainInterval, 100 - percentage)
         
         if (brainDamage === false) 
         {
-            setPercent(intervalContainer, 100)
+            setPercent(brainInterval, 100)
             clearInterval(brainDamageInterval)
             return
         }
@@ -92,4 +92,4 @@ setPercent(brainInterval, 100)
 levelContainer.appendChild(levelInterval)
 brainContainer.appendChild(brainInterval)
 
-startBrainDamage(brainInterval)
+startBrainDamage()
