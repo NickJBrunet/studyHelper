@@ -47,19 +47,146 @@ h2
 
 
 
+
+
+.info-display
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+
+.info-display-color
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(224, 221, 171);
+}
+
+
+
+
+
+
+
+
+
+
 #main-container
 {
+    display: flex;
     width: 100%;
+
+    margin-top: 20px;
 }
 
 #left-container
 {
     /* border: 1px solid white; */
+
     display: flex;
-    align-items: center;
     justify-content: center;
+
     width: 50%;
 }
+
+#right-container
+{
+    /* border: 1px solid white; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+input[type=text] 
+{
+    outline: none;
+
+    border: 0px solid #cdcdcd;
+    border-radius: 5px;
+    background-color: rgb(24, 24, 24);
+
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+    padding: 5px;
+    /* max-width: 150px; */
+}
+
+button
+{
+    border: 0px solid #cdcdcd;
+    border-radius: 5px;
+    background-color: rgb(24, 24, 24);
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(204, 248, 204);
+
+    padding: 10px;
+}
+
+button:hover, input[type=text]:hover
+{
+    background-color: rgb(40, 40, 40);
+}
+
+
+#goals-container
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    width: 350px;
+}
+
+.goal
+{
+    border-radius: 5px;
+    background-color: rgb(24, 24, 24);
+
+    text-align: center;
+    color: white;
+
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+#session-info
+{
+    text-align: center;
+}
+
+#session-goals
+{
+    display: flex;
+    align-items: center;
+
+    column-gap: 15px;
+}
+
+
+
 
 
 
@@ -124,14 +251,14 @@ h2
 
 #brain-info
 {
-    /* border: 1px solid white; */
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: gray;
 
     width: 300px;
     padding-top: 40px;
 }
+
+
+
 
 
 

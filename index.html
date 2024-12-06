@@ -18,16 +18,46 @@
         </div>
     </div>
 
+    <p class="info-display">GOAL: go from smooth brain to MEGA brain by studying.</p>
+
     <div id="main-container">
+
+
         <div id="left-container">
             <div id="brain-info">
-                <p>Damage/Second: <a id="damage"></a></p>
-                <p>Brain Xp: <a id="xpPer"></a></p>
-                <p>Brain Health: <a id="brainHealth"></a></p>
+                <p class="info-display">Damage/Second: <a id="damage"></a></p>
+                <p class="info-display">Brain Xp: <a id="xpPer"></a></p>
+                <p class="info-display">Brain Health: <a id="brainHealth"></a></p>
             </div>
             <div id="brain-container">
                 <img src="images/brain-smooth.png" id="brain-icon">
             </div>
+        </div>
+        <div id="right-container">
+            <button id="new-study-session">BEGIN STUDY SESSION</button>
+            <div id="session-info">
+                <p class="info-display">Study Time: <span class="info-display-color">25 Minutes</span></p>
+                <p class="info-display">Break Time: <span class="info-display-color">5 Minutes</span></p>
+                <p class="info-display">Study Points: <span class="info-display-color">0</span></p>
+            </div>
+            <div id="session-goals">
+                <label class="info-display-color" for="new-goal">INPUT NEW GOAL:</label>
+                <input type="text" id="new-goal" name="new-goal">
+            </div>    
+            <div id="goals-container">
+                <div class="goal info-display">
+                    <p>GOAL PLACEHOLDER #1</p>
+                </div>
+                <div class="goal info-display">
+                    <p>GOAL PLACEHOLDER #2</p>
+                </div>
+                <div class="goal info-display">
+                    <p>GOAL PLACEHOLDER #3</p>
+                </div>
+            </div>
+
+            <p class="info-display">Earn one study point per sucessful goal completion.</p>
+
         </div>
     </div>
     
